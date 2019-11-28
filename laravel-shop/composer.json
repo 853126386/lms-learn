@@ -1,0 +1,27 @@
+{
+    "name": "aaronlee/laravel-shop",
+    "description": "laravel商组件",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "github",
+            "email": "lwt@163.com"
+        }
+    ],
+    "require": {},
+    "replace": {
+        "aaronlee/laravel-shop-wap-member": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "AaronLee\\LaravelShop\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AaronLee\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "aaronlee\/sjunit-laravel",
+    "description": "A simplified version of the laravel framework unit test",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "arronlee",
+            "email": "853126386@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AaronLee\\SJunitLaravel\\": "src"
+        }
+    }
+}
