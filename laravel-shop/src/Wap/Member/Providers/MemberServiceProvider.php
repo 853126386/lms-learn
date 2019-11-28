@@ -39,12 +39,13 @@ class MemberServiceProvider extends ServiceProvider{
             // 定义访问路由的域名
 
             // 是定义路由的命名空间
-            'namespace' => ' AaronLee\LaravelShop\Wap\Member\Http\Controllers',
+            'namespace' => 'AaronLee\LaravelShop\Wap\Member\Http\Controllers',
             // 这是前缀
-            'prefix' => 'aaron',
+            'prefix' => 'wap/member',
             // 这是中间件
             'middleware' => 'web',
         ];
     }
+
 
 }

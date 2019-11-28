@@ -1,8 +1,8 @@
 <?php
-namespace ShineYork\LaravelShop\Wap\Member\Http\Controllers;
+namespace AaronLee\LaravelShop\Wap\Member\Http\Controllers;
 
 use Illuminate\Http\Request;
-use ShineYork\LaravelShop\Wap\Member\Models\User;
+use AaronLee\LaravelShop\Wap\Member\Models\User;
 use Illuminate\Support\Facades\Auth;
 // use
 class AuthorizationsController extends Controller

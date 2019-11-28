@@ -62,7 +62,7 @@
         ]
     },
     "repositories": {
-        "local": {
+        "aaronlee": {
             "type": "path",
             "url": "../laravel-shop"
         }
