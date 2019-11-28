@@ -5,8 +5,11 @@ use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\Route;
 class MemberServiceProvider extends ServiceProvider{
-
-
+    protected $middlewareGroup=[
+    ];
+    protected $routeMiddleware=[
+        "wechat.oauth"=>\Overtrue\LaravelWeChat\Middleware\OAuthAuthenticate::class
+    ];
     public function register(){
 
         $this->registerRoutes();
@@ -14,6 +17,17 @@ class MemberServiceProvider extends ServiceProvider{
         $this->loadViewsFrom(
             __DIR__.'/../../resources/views', 'shop'
         );
+        $this->registerRouteMiddleware();
+    }
+
+    protected function registerRouteMiddleware(){
+        foreach ($this->routeMiddleware as $k=>$v){
+            $this->app['router']->aliasMiddleware($k,$v);
+        }
+
+        foreach ($this->middlewareGroup as $k=>$v){
+            $this->app['router']->middlewareGroup($k,$v);
+        }
     }
 
 

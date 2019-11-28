@@ -74,7 +74,7 @@
       <workItem from="1574864078202" duration="150000" />
       <workItem from="1574864384550" duration="6348000" />
       <workItem from="1574905893035" duration="9478000" />
-      <workItem from="1574945279796" duration="9036000" />
+      <workItem from="1574945279796" duration="10125000" />
     </task>
     <servers />
   </component>
@@ -91,16 +91,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/laravel-shop/src/Wap/Member/Providers/MemberServiceProvider.php</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
