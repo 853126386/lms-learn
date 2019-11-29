@@ -5,8 +5,11 @@ use Illuminate\Support\ServiceProvider;
 
 use Illuminate\Support\Facades\Route;
 class MemberServiceProvider extends ServiceProvider{
-
-
+    protected $middlewareGroup=[
+    ];
+    protected $routeMiddleware=[
+        "wechat.oauth"=>\Overtrue\LaravelWeChat\Middleware\OAuthAuthenticate::class
+    ];
     public function register(){
 
         $this->registerRoutes();
@@ -14,6 +17,17 @@ class MemberServiceProvider extends ServiceProvider{
         $this->loadViewsFrom(
             __DIR__.'/../../resources/views', 'shop'
         );
+        $this->registerRouteMiddleware();
+    }
+
+    protected function registerRouteMiddleware(){
+        foreach ($this->routeMiddleware as $k=>$v){
+            $this->app['router']->aliasMiddleware($k,$v);
+        }
+
+        foreach ($this->middlewareGroup as $k=>$v){
+            $this->app['router']->middlewareGroup($k,$v);
+        }
     }
 
 
@@ -39,12 +53,13 @@ class MemberServiceProvider extends ServiceProvider{
             // 定义访问路由的域名
 
             // 是定义路由的命名空间
-            'namespace' => ' AaronLee\LaravelShop\Wap\Member\Http\Controllers',
+            'namespace' => 'AaronLee\LaravelShop\Wap\Member\Http\Controllers',
             // 这是前缀
-            'prefix' => 'aaron',
+            'prefix' => 'wap/member',
             // 这是中间件
             'middleware' => 'web',
         ];
     }
+
 
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d9f3f474ab225524be8d1772b915927",
+    "content-hash": "9c7716fec06a62aa966a9a33020fa514",
     "packages": [
         {
             "name": "aaronlee/laravel-shop",

@@ -1,8 +1,8 @@
 <?php
-namespace ShineYork\LaravelShop\Wap\Member\Http\Controllers;
+namespace AaronLee\LaravelShop\Wap\Member\Http\Controllers;
 
 use Illuminate\Http\Request;
-use ShineYork\LaravelShop\Wap\Member\Models\User;
+use AaronLee\LaravelShop\Wap\Member\Models\User;
 use Illuminate\Support\Facades\Auth;
 // use
 class AuthorizationsController extends Controller
@@ -16,7 +16,7 @@ class AuthorizationsController extends Controller
         if (!$user) {
             // 不存在记录用户信息
             $user = User::create([
-                "nickname"      => $wechatUser->name,
+                "nickname"      => $wechatUser->name?:'',
                 "weixin_openid" => $wechatUser->id,
                 "image_head"    => $wechatUser->avatar
             ]);

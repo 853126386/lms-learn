@@ -12,7 +12,11 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/SJunit-laravel/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
   </component>
+<<<<<<< HEAD
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -168,6 +172,18 @@
       <pane id="Scope" />
     </panes>
   </component>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9022" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="lms.test" id="fde70a29-352e-4881-b420-f6615ed68be7" name="lms.test" port="8080" />
+    </servers>
+  </component>
+  <component name="ProjectId" id="1U3XOqmD5UOXvJ1PbYm2p7j3VQI" />
+>>>>>>> c2bea3650b825877909a39e6477fb2e126bc0d60
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../shineyork" />
@@ -177,17 +193,18 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\WWW\component-test\laravel-shop\src\Wap\Member\Http\Controllers" />
-      <recent name="F:\WWW\component-test\sjunit-laravel" />
-      <recent name="F:\WWW\component-test\SJunit-laravel\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WWW\component-test\laravel\vendor\filp" />
       <recent name="F:\WWW\component-test\laravel-shop\src\Wap\Member" />
       <recent name="F:\WWW\component-test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\component-test\laravel-shop\src\Wap\Member\Http\Controllers" />
+      <recent name="F:\WWW\component-test\sjunit-laravel" />
+      <recent name="F:\WWW\component-test\SJunit-laravel\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,6 +233,7 @@
       <workItem from="1574780753351" duration="6928000" />
       <workItem from="1574864078202" duration="150000" />
       <workItem from="1574864384550" duration="6348000" />
+<<<<<<< HEAD
       <workItem from="1574905893035" duration="10892000" />
       <workItem from="1574991276201" duration="735000" />
     </task>
@@ -364,5 +382,25 @@
         </state>
       </provider>
     </entry>
+=======
+      <workItem from="1574905893035" duration="9478000" />
+      <workItem from="1574945279796" duration="10125000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+>>>>>>> c2bea3650b825877909a39e6477fb2e126bc0d60
   </component>
 </project>

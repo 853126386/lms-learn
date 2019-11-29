@@ -1,2 +1,2 @@
 <?php
-Route::get('wechat/user','AuthorizationsController@wechatStore')->middleware("wechat.oauth");
+Route::get("/wechatStore", "AuthorizationsController@wechatStore")->middleware("wechat.oauth");
