@@ -2,7 +2,7 @@
 namespace AaronLee\LaravelShop\Wap\Member\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 class MemberServiceProvider extends ServiceProvider{
     protected $middlewareGroup=[
@@ -17,9 +17,27 @@ class MemberServiceProvider extends ServiceProvider{
         $this->loadViewsFrom(
             __DIR__.'/../../resources/views', 'shop'
         );
+
+        //加载配置文件member.php
+        $this->mergeConfigFrom(__DIR__.'/../Config/member.php', "wap.member");
+
+
         $this->registerRouteMiddleware();
     }
 
+
+    public function boot()
+    {
+        //配置auth配置信息
+        $this->loadMemberAuthConfig();
+    }
+
+    protected function loadMemberAuthConfig(){
+        config(Arr::dot(config('wap.member.auth', []), 'auth.'));
+    }
+
+
+    //注册中间件
     protected function registerRouteMiddleware(){
         foreach ($this->routeMiddleware as $k=>$v){
             $this->app['router']->aliasMiddleware($k,$v);
@@ -30,11 +48,6 @@ class MemberServiceProvider extends ServiceProvider{
         }
     }
 
-
-    public function boot(){
-
-
-    }
 
 
     // 参考别人的写法
