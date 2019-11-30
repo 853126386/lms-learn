@@ -1,6 +1,7 @@
 <?php
 namespace AaronLee\LaravelShop\Wap\Member\Providers;
 
+use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
@@ -19,23 +20,33 @@ class MemberServiceProvider extends ServiceProvider{
         );
 
         //加载配置文件member.php
-        $this->mergeConfigFrom(__DIR__.'/../Config/member.php', "wap.member");
+//      $this->mergeConfigFrom(__DIR__.'/../Config/member.php', "wap.member");
+        $this->registerpublishing();
 
-
+        //发布配置文件   php artisan vendor:publish --provider="AaronLee\LaravelShop\Wap\Member\Providers\MemberServiceProvider"
         $this->registerRouteMiddleware();
     }
 
 
+    //服务提供者注册完后执行
     public function boot()
     {
-
         $this->loadMemberAuthConfig();
     }
 
-    //配置auth配置信息
+    //根据member.php文件更新容器中config配置
     protected function loadMemberAuthConfig(){
+        config(Arr::dot(config('wap.member.wechat', []), 'wechat.'));
         config(Arr::dot(config('wap.member.auth', []), 'auth.'));
     }
+
+    protected function registerpublishing()
+    {
+        if ( $this->app->runningInConsole()) {
+            $this->publishes([ __DIR__.'/../Config'=> config_path('wap')], 'laravel-shop-wap-member');
+        }
+    }
+
 
 
     //注册路由中间件
