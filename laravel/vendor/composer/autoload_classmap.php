@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AaronLee\\LaravelShop\\Wap\\Member\\Console\\Commands\\InstallCommand' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Console/Commands/InstallCommand.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\AuthorizationsController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/AuthorizationsController.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\Controller' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/Controller.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\TestController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/TestController.php',
