@@ -8,7 +8,7 @@ class MemberServiceProvider extends ServiceProvider{
     protected $middlewareGroup=[
     ];
     protected $routeMiddleware=[
-        "wechat.oauth"=>\Overtrue\LaravelWeChat\Middleware\OAuthAuthenticate::class
+        "wechat.oauth"=>\Overtrue\LaravelWeChat\Middleware\OAuthAuthenticate::class//微信认证中间件
     ];
     public function register(){
 
@@ -20,6 +20,7 @@ class MemberServiceProvider extends ServiceProvider{
         $this->registerRouteMiddleware();
     }
 
+    //注册路由中间件
     protected function registerRouteMiddleware(){
         foreach ($this->routeMiddleware as $k=>$v){
             $this->app['router']->aliasMiddleware($k,$v);
