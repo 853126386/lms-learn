@@ -2,8 +2,6 @@
 
 
 return [
-<<<<<<< HEAD
-=======
     "wechat"=>[
         'official_account' => [
             'default' => [
@@ -25,7 +23,6 @@ return [
             ],
         ],
     ],
->>>>>>> 5cfdd4ba7f6f880210148fe6384bb90256713501
   "auth"=>[
       //设置守卫为member
       'guard' => 'member',

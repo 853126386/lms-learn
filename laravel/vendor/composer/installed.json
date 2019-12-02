@@ -5453,8 +5453,8 @@
     },
     {
         "name": "symfony/polyfill-ctype",
-        "version": "v1.13.0",
-        "version_normalized": "1.13.0.0",
+        "version": "v1.13.1",
+        "version_normalized": "1.13.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -5656,8 +5656,8 @@
     },
     {
         "name": "symfony/polyfill-mbstring",
-        "version": "v1.13.0",
-        "version_normalized": "1.13.0.0",
+        "version": "v1.13.1",
+        "version_normalized": "1.13.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/polyfill-mbstring.git",
