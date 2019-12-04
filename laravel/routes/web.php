@@ -14,8 +14,6 @@
 Route::get('/', function () {
 //    return view('welcome');
 
-    dd(config());
-
 });
 Route::group(['middleware' => ['web', 'wechat.oauth']], function () {
     Route::get('/user', function () {

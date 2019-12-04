@@ -495,12 +495,18 @@ class ComposerStaticInit10db5faccb96fd27faf3e6ac48127b1c
     );
 
     public static $classMap = array (
+        'AaronLee\\LaravelShop\\Wap\\Good\\Http\\Controllers\\Controller' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Good/Http/Controllers/Controller.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\Console\\Commands\\InstallCommand' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Console/Commands/InstallCommand.php',
+        'AaronLee\\LaravelShop\\Wap\\Member\\Facades\\Member' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Facades/Member.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\AuthorizationsController' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/AuthorizationsController.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\Controller' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/Controller.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\TestController' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/TestController.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\Models\\User' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Models/User.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Providers/MemberServiceProvider.php',
+        'AaronLee\\LaravelShop\\Wap\\Member\\member' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/member.php',
+        'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\Controller' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/Controller.php',
+        'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\WechatMenuController' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/WechatMenuController.php',
+        'AaronLee\\LaravelShop\\Wap\\Shop\\Providers\\ShopServiceProvider' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Shop/Providers/ShopServiceProvider.php',
         'AaronLee\\LaravelShop\\Wap\\member\\TestController' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/TestController.php',
         'AaronLee\\SJunitLaravel\\Http\\Controllers\\SJunitController' => __DIR__ . '/..' . '/aaronlee/sjunit-laravel/src/Http/Controllers/SJunitController.php',
         'AaronLee\\SJunitLaravel\\Http\\Controllers\\TestController' => __DIR__ . '/..' . '/aaronlee/sjunit-laravel/src/Http/Controllers/TestController.php',

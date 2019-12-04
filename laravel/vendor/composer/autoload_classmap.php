@@ -6,12 +6,18 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AaronLee\\LaravelShop\\Wap\\Good\\Http\\Controllers\\Controller' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Good/Http/Controllers/Controller.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Console\\Commands\\InstallCommand' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Console/Commands/InstallCommand.php',
+    'AaronLee\\LaravelShop\\Wap\\Member\\Facades\\Member' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Facades/Member.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\AuthorizationsController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/AuthorizationsController.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\Controller' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/Controller.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Http\\Controllers\\TestController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Http/Controllers/TestController.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Models\\User' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Models/User.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Providers/MemberServiceProvider.php',
+    'AaronLee\\LaravelShop\\Wap\\Member\\member' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/member.php',
+    'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\Controller' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/Controller.php',
+    'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\WechatMenuController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/WechatMenuController.php',
+    'AaronLee\\LaravelShop\\Wap\\Shop\\Providers\\ShopServiceProvider' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Shop/Providers/ShopServiceProvider.php',
     'AaronLee\\LaravelShop\\Wap\\member\\TestController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/TestController.php',
     'AaronLee\\SJunitLaravel\\Http\\Controllers\\SJunitController' => $vendorDir . '/aaronlee/sjunit-laravel/src/Http/Controllers/SJunitController.php',
     'AaronLee\\SJunitLaravel\\Http\\Controllers\\TestController' => $vendorDir . '/aaronlee/sjunit-laravel/src/Http/Controllers/TestController.php',

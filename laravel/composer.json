@@ -65,6 +65,10 @@
         "aaronlee": {
             "type": "path",
             "url": "../laravel-shop"
+        },
+        "local": {
+            "type": "path",
+            "url": "../laravel-shop"
         }
     }
 }

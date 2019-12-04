@@ -64,7 +64,6 @@ abstract class ServiceProvider
             ));
         }
     }
-    
 
     /**
      * Load the given routes file if routes are not already cached.

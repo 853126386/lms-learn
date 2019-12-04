@@ -20,7 +20,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AaronLee\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider"
+                "AaronLee\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider",
+                "AaronLee\\LaravelShop\\Wap\\Shop\\Providers\\ShopServiceProvider"
             ]
         }
     }

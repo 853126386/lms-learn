@@ -4,6 +4,7 @@ namespace AaronLee\LaravelShop\Wap\Member\Http\Controllers;
 use Illuminate\Http\Request;
 use AaronLee\LaravelShop\Wap\Member\Models\User;
 use Illuminate\Support\Facades\Auth;
+use AaronLee\LaravelShop\Wap\Member\Facades\Member;
 // use
 class AuthorizationsController extends Controller
 {
@@ -18,7 +19,7 @@ class AuthorizationsController extends Controller
             $user = User::create([
                 "nickname"      => $wechatUser->name?:'',
                 "weixin_openid" => $wechatUser->id,
-                "image_head"    => $wechatUser->avatar
+                "image_head"    => $wechatUser->avatar,
             ]);
         }
 
@@ -27,8 +28,8 @@ class AuthorizationsController extends Controller
 
         // 改变用户的状态设置为登入
         // 难得点
-        Auth::guard('member')->login($user);
-        var_dump(Auth::check());
+        Member::guard()->login($user);
+        Member::check();
         return "通过";
         //return redirect()->route('wap.member.index');
     }
