@@ -19,7 +19,7 @@ class ShopServiceProvider extends \Illuminate\Support\ServiceProvider{
         $this->registerRoutes();
         // 指定的组件的名称，自定义的资源目录地址
         $this->loadViewsFrom(
-            __DIR__.'/../../resources/views', 'shop'
+            __DIR__.'/../resources/views', 'wap.shop'
         );
         //加载配置文件member.php
         $this->mergeConfigFrom(__DIR__.'/../Config/shop.php', "wap.shop");

@@ -7,3 +7,4 @@
  */
 
 Route::get("/createMenu", "WechatMenuController@createMenu");
+Route::get("/index", "IndexController@index");
