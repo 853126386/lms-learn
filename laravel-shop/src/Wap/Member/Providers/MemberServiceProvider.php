@@ -1,11 +1,10 @@
 <?php
 namespace AaronLee\LaravelShop\Wap\Member\Providers;
 
-<<<<<<< HEAD
-=======
+
 
 use Illuminate\Foundation\Application as LaravelApplication;
->>>>>>> 5cfdd4ba7f6f880210148fe6384bb90256713501
+
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
@@ -30,31 +29,16 @@ class MemberServiceProvider extends ServiceProvider{
         //加载配置文件member.php
         $this->mergeConfigFrom(__DIR__.'/../Config/member.php', "wap.member");
 
-<<<<<<< HEAD
-
-=======
         $this->registerpublishing();
 
         //该命令相当于执行服务提供者
->>>>>>> 5cfdd4ba7f6f880210148fe6384bb90256713501
+
         $this->registerRouteMiddleware();
     }
 
 
-<<<<<<< HEAD
-    public function boot()
-    {
-        //配置auth配置信息
-        $this->loadMemberAuthConfig();
-    }
-
-    protected function loadMemberAuthConfig(){
-        config(Arr::dot(config('wap.member.auth', []), 'auth.'));
-    }
-
-
     //注册中间件
-=======
+
     /**
      *服务提供者注册完后执行
      */
@@ -101,7 +85,7 @@ class MemberServiceProvider extends ServiceProvider{
     /**
      *注册路由中间件
      */
->>>>>>> 5cfdd4ba7f6f880210148fe6384bb90256713501
+
     protected function registerRouteMiddleware(){
         foreach ($this->routeMiddleware as $k=>$v){
             $this->app['router']->aliasMiddleware($k,$v);
@@ -114,14 +98,11 @@ class MemberServiceProvider extends ServiceProvider{
 
 
 
-<<<<<<< HEAD
-    // 参考别人的写法
-    // 对于源码熟悉更好一些
-=======
+
     /**
      * 注册路由 [参考别人的写法,对于源码熟悉更好一些]
      */
->>>>>>> 5cfdd4ba7f6f880210148fe6384bb90256713501
+
     private function registerRoutes()
     {
 //        dd(__DIR__.'/../Http/route.php');
