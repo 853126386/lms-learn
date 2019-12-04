@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../laravel-shop",
-                "reference": "a9f2d209888ff89b76cac5fdaa24fe8d0a6c68f5"
+                "reference": "63f58c29baf6d842119f4c618acc7c71141268e9"
             },
             "replace": {
                 "aaronlee/laravel-shop-wap-member": "self.version"
@@ -27,6 +27,9 @@
                 }
             },
             "autoload": {
+                "files": [
+                    "src/Wap/Shop/Support/helpers.php"
+                ],
                 "psr-4": {
                     "AaronLee\\LaravelShop\\": "src"
                 }

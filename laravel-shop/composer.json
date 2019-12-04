@@ -13,6 +13,9 @@
         "aaronlee/laravel-shop-wap-member": "self.version"
     },
     "autoload": {
+        "files": [
+            "src/Wap/Shop/Support/helpers.php"
+        ],
         "psr-4": {
             "AaronLee\\LaravelShop\\": "src"
         }

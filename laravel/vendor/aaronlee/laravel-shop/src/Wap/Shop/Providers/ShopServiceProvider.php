@@ -15,15 +15,17 @@ class ShopServiceProvider extends \Illuminate\Support\ServiceProvider{
 
     public function register()
     {
-
+        //注册路由
         $this->registerRoutes();
+
         // 指定的组件的名称，自定义的资源目录地址
         $this->loadViewsFrom(
-            __DIR__.'/../resources/views', 'wap.shop'
+            __DIR__.'/../Resources/views', 'wap-shop'
         );
-        //加载配置文件member.php
+        //加载配置文件shop.php
         $this->mergeConfigFrom(__DIR__.'/../Config/shop.php', "wap.shop");
 
+        //发布静态资源
         $this->registerpublishing();
 
         //该命令相当于执行服务提供者
@@ -79,12 +81,13 @@ class ShopServiceProvider extends \Illuminate\Support\ServiceProvider{
     }
 
     /**
-     *发布配置文件   php artisan vendor:publish --provider="AaronLee\LaravelShop\Wap\Member\Providers\MemberServiceProvider"
+     *发布静态文件   php artisan vendor:publish --provider="AaronLee\LaravelShop\Wap\Member\Providers\MemberServiceProvider"
      */
     protected function registerpublishing()
     {
         if ( $this->app->runningInConsole()) {
-            $this->publishes([ __DIR__.'/../Config'=> config_path('wap')], 'laravel-shop-wap-shop');
+            $this->publishes([ __DIR__.'/../Resources/assets'=> public_path('vendor/aaronlee/laravel-wap-shop')], 'laravel-shop-wap-shop');
+
         }
     }
 

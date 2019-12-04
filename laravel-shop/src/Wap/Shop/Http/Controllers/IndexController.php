@@ -5,7 +5,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return '测试';
-//        return view();
+//        return '测试';
+        return view('wap-shop::index.index');
     }
 }

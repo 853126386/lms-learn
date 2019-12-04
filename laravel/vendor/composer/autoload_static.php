@@ -29,6 +29,7 @@ class ComposerStaticInit10db5faccb96fd27faf3e6ac48127b1c
         '6747f579ad6817f318cc3a7e7a0abb93' => __DIR__ . '/..' . '/overtrue/wechat/src/Kernel/Helpers.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         'b6ec61354e97f32c0ae683041c78392a' => __DIR__ . '/..' . '/scrivo/highlight.php/HighlightUtilities/functions.php',
+        '92927ec405087d159711b4c2fb2e514d' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Shop/Support/helpers.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
     );
 
@@ -505,6 +506,7 @@ class ComposerStaticInit10db5faccb96fd27faf3e6ac48127b1c
         'AaronLee\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Providers/MemberServiceProvider.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\member' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/member.php',
         'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\Controller' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/Controller.php',
+        'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\IndexController' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/IndexController.php',
         'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\WechatMenuController' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/WechatMenuController.php',
         'AaronLee\\LaravelShop\\Wap\\Shop\\Providers\\ShopServiceProvider' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Shop/Providers/ShopServiceProvider.php',
         'AaronLee\\LaravelShop\\Wap\\member\\TestController' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/TestController.php',

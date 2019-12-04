@@ -18,19 +18,22 @@ class MemberServiceProvider extends ServiceProvider{
     ];
     public function register(){
 
+
+        //1.路由注册
         $this->registerRoutes();
 
-        // 指定的组件的名称，自定义的资源目录地址
+        //2. 指定的组件的名称，自定义的资源目录地址
         $this->loadViewsFrom(
             __DIR__.'/../../resources/views', 'shop'
         );
-        //加载配置文件member.php
+
+        //3.加载配置文件member.php
         $this->mergeConfigFrom(__DIR__.'/../Config/member.php', "wap.member");
 
+        //4.文件发布（配置发布，静态资源发布。。。。）
         $this->registerpublishing();
 
-        //该命令相当于执行服务提供者
-
+        //5.该命令相当于执行服务提供者
         $this->registerRouteMiddleware();
     }
 
@@ -43,16 +46,16 @@ class MemberServiceProvider extends ServiceProvider{
     public function boot()
     {
 
-        //1
+        //1.根据发布的配置文件，修改配置信息
         $this->loadMemberAuthConfig();
 
-        //2
+        //2.加载数据库迁移文件
         $this->loadMigrations();
 
-        //3
+        //3.注册命令
         $this->commands($this->commands);
 
-
+        //4.重新绑定wechat配置
         $this->app->singleton("wechat.official_account.default", function ($laravelApp) {
             $app = new OfficialAccount(array_merge(config('wechat.defaults', []), config("wechat.official_account.default", [])));
 
@@ -121,6 +124,9 @@ class MemberServiceProvider extends ServiceProvider{
         });
     }
 
+    /**
+     * @return array
+     */
     private function routeConfiguration()
     {
         return [

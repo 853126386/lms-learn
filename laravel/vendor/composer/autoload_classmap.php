@@ -16,6 +16,7 @@ return array(
     'AaronLee\\LaravelShop\\Wap\\Member\\Providers\\MemberServiceProvider' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/Providers/MemberServiceProvider.php',
     'AaronLee\\LaravelShop\\Wap\\Member\\member' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/member.php',
     'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\Controller' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/Controller.php',
+    'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\IndexController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/IndexController.php',
     'AaronLee\\LaravelShop\\Wap\\Shop\\Http\\Controllers\\WechatMenuController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Shop/Http/Controllers/WechatMenuController.php',
     'AaronLee\\LaravelShop\\Wap\\Shop\\Providers\\ShopServiceProvider' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Shop/Providers/ShopServiceProvider.php',
     'AaronLee\\LaravelShop\\Wap\\member\\TestController' => $vendorDir . '/aaronlee/laravel-shop/src/Wap/Member/TestController.php',

@@ -12,8 +12,7 @@
 */
 
 Route::get('/', function () {
-//    return view('welcome');
-
+    dd(shop_asset('css'));
 });
 Route::group(['middleware' => ['web', 'wechat.oauth']], function () {
     Route::get('/user', function () {
