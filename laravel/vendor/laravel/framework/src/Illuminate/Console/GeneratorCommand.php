@@ -51,9 +51,8 @@ abstract class GeneratorCommand extends Command
     public function handle()
     {
         $name = $this->qualifyClass($this->getNameInput());
-
+        var_dump($name);exit;
         $path = $this->getPath($name);
-
         // First we will check to see if the class already exists. If it does, we don't want
         // to create the class and overwrite the user's code. So, we will bail out so the
         // code is untouched. Otherwise, we will continue generating this class' files.
@@ -164,7 +163,7 @@ abstract class GeneratorCommand extends Command
 
     /**
      * Replace the namespace for the given stub.
-     *
+     *  替换模板中的命名空间
      * @param  string  $stub
      * @param  string  $name
      * @return $this
@@ -193,7 +192,7 @@ abstract class GeneratorCommand extends Command
 
     /**
      * Replace the class name for the given stub.
-     *
+     * 替换模板中的类名
      * @param  string  $stub
      * @param  string  $name
      * @return string

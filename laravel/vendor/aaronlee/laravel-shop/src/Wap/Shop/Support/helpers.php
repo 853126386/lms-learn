@@ -1,4 +1,4 @@
-
+<?php
 if (!function_exists('shop_asset')) {
     /**
      * Generate an asset path for the application.

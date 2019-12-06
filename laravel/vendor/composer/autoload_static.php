@@ -496,6 +496,8 @@ class ComposerStaticInit10db5faccb96fd27faf3e6ac48127b1c
     );
 
     public static $classMap = array (
+        'AaronLee\\LaravelShop\\Wap\\Extend\\ArtisanServiceProvider' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Extend/ArtisanServiceProvider.php',
+        'AaronLee\\LaravelShop\\Wap\\Extend\\Make\\ClassMakeCommand' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Extend/Make/ClassMakeCommand.php',
         'AaronLee\\LaravelShop\\Wap\\Good\\Http\\Controllers\\Controller' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Good/Http/Controllers/Controller.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\Console\\Commands\\InstallCommand' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Console/Commands/InstallCommand.php',
         'AaronLee\\LaravelShop\\Wap\\Member\\Facades\\Member' => __DIR__ . '/..' . '/aaronlee/laravel-shop/src/Wap/Member/Facades/Member.php',

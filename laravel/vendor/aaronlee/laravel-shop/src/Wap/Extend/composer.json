@@ -1,0 +1,17 @@
+{
+    "name": "aaronlee\/laravel-shop-wap-extend",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "github",
+            "email": "lwt@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AaronLee\\LaravelShop\\Wap\\Extend\\": ""
+        }
+    }
+}
